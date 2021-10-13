@@ -1,0 +1,738 @@
+digraph DAG {
+	rankdir=TB;
+resnetv10_stage4_conv4_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage4_conv4_fwd__2\lInput : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 7 x 7 x 512\>\lFilter : i8[S:0.0625 O:0][-8.000,7.938]\<512 x 3 x 3 x 512\>\lBias : i32[S:0.0010 O:0][-2097152.000,2097152.000]\<512\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.1250 O:0][-16.000,15.875]\<1 x 7 x 7 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage4_conv3_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage4_conv3_fwd__2\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 7 x 7 x 512\>\lFilter : i8[S:0.0039 O:0][-0.500,0.496]\<512 x 3 x 3 x 512\>\lBias : i32[S:0.0002 O:0][-524288.000,524288.000]\<512\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : RELU\lusers : 1\lResult : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 7 x 7 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage4_activation0__1[
+	label = "{{<Input>Input}|{Relu\lname : resnetv10_stage4_activation0__1\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 7 x 7 x 512\>\lusers : 2\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 7 x 7 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=LavenderBlush1
+penwidth = 2];
+
+resnetv10_stage4__plus0__1[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Add\lname : resnetv10_stage4__plus0__1\lLHS : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 7 x 7 x 512\>\lRHS : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 7 x 7 x 512\>\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 7 x 7 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=GhostWhite
+penwidth = 2];
+
+resnetv10_stage4_conv2_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage4_conv2_fwd__2\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\lFilter : i8[S:0.0156 O:0][-2.000,1.984]\<512 x 1 x 1 x 256\>\lBias : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<512\>\lKernels : [1, 1]\lStrides : [2, 2]\lPads : [0, 0, 0, 0]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 7 x 7 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage3_activation1__1[
+	label = "{{<Input>Input}|{Relu\lname : resnetv10_stage3_activation1__1\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\lusers : 2\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=LavenderBlush1
+penwidth = 2];
+
+resnetv10_stage3__plus1__1[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Add\lname : resnetv10_stage3__plus1__1\lLHS : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\lRHS : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=GhostWhite
+penwidth = 2];
+
+resnetv10_stage3_activation0__1[
+	label = "{{<Input>Input}|{Relu\lname : resnetv10_stage3_activation0__1\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\lusers : 2\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=LavenderBlush1
+penwidth = 2];
+
+resnetv10_stage3__plus0__1[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Add\lname : resnetv10_stage3__plus0__1\lLHS : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 14 x 14 x 256\>\lRHS : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=GhostWhite
+penwidth = 2];
+
+resnetv10_stage3_conv2_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage3_conv2_fwd__2\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\lFilter : i8[S:0.0039 O:0][-0.500,0.496]\<256 x 1 x 1 x 128\>\lBias : i32[S:0.0002 O:0][-524288.000,524288.000]\<256\>\lKernels : [1, 1]\lStrides : [2, 2]\lPads : [0, 0, 0, 0]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 14 x 14 x 256\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage2_activation1__1[
+	label = "{{<Input>Input}|{Relu\lname : resnetv10_stage2_activation1__1\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\lusers : 2\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=LavenderBlush1
+penwidth = 2];
+
+resnetv10_stage2__plus1__1[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Add\lname : resnetv10_stage2__plus1__1\lLHS : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\lRHS : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 28 x 28 x 128\>\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=GhostWhite
+penwidth = 2];
+
+resnetv10_stage2_activation0__1[
+	label = "{{<Input>Input}|{Relu\lname : resnetv10_stage2_activation0__1\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\lusers : 2\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=LavenderBlush1
+penwidth = 2];
+
+resnetv10_stage2__plus0__1[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Add\lname : resnetv10_stage2__plus0__1\lLHS : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 28 x 28 x 128\>\lRHS : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=GhostWhite
+penwidth = 2];
+
+resnetv10_stage2_conv2_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage2_conv2_fwd__2\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\lFilter : i8[S:0.0078 O:0][-1.000,0.992]\<128 x 1 x 1 x 64\>\lBias : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<128\>\lKernels : [1, 1]\lStrides : [2, 2]\lPads : [0, 0, 0, 0]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 28 x 28 x 128\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage1_activation1__1[
+	label = "{{<Input>Input}|{Relu\lname : resnetv10_stage1_activation1__1\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\lusers : 2\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=LavenderBlush1
+penwidth = 2];
+
+resnetv10_stage1__plus1__1[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Add\lname : resnetv10_stage1__plus1__1\lLHS : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\lRHS : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=GhostWhite
+penwidth = 2];
+
+resnetv10_stage1_activation0__1[
+	label = "{{<Input>Input}|{Relu\lname : resnetv10_stage1_activation0__1\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\lusers : 2\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=LavenderBlush1
+penwidth = 2];
+
+resnetv10_stage1__plus0__1[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Add\lname : resnetv10_stage1__plus0__1\lLHS : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 56 x 56 x 64\>\lRHS : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=GhostWhite
+penwidth = 2];
+
+resnetv10_pool0_fwd__1[
+	label = "{{<Input>Input}|{MaxPool\lname : resnetv10_pool0_fwd__1\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 112 x 112 x 64\>\lKernels : [3, 3]\lStrides : [2, 2]\lPads : [1, 1, 1, 1]\lLayout : 0\lusers : 2\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 56 x 56 x 64\>\lArgmax : index64\<1 x 56 x 56 x 64\>\l}|{<Result>Result|<Argmax>Argmax}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=AliceBlue
+penwidth = 2];
+
+resnetv10_pool0_fwd__1_quantize[
+	label = "{{<Input>Input}|{Quantize\lname : resnetv10_pool0_fwd__1_quantize\lInput : float\<1 x 112 x 112 x 64\>\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 112 x 112 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=PeachPuff1
+penwidth = 2];
+
+resnetv10_conv0_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_conv0_fwd__2\lInput : float\<1 x 224 x 224 x 3\>\lFilter : float\<64 x 7 x 7 x 3\>\lBias : float\<64\>\lKernels : [7, 7]\lStrides : [2, 2]\lPads : [3, 3, 3, 3]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : RELU\lusers : 1\lResult : float\<1 x 112 x 112 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+_defaultpreprocess0_broadcast_div0[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Div\lname : _defaultpreprocess0_broadcast_div0\lLHS : float\<1 x 224 x 224 x 3\>\lRHS : float\<1 x 224 x 224 x 3\>\lusers : 1\lResult : float\<1 x 224 x 224 x 3\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Salmon
+penwidth = 2];
+
+_defaultpreprocess0_broadcast_minus0[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Sub\lname : _defaultpreprocess0_broadcast_minus0\lLHS : float\<1 x 224 x 224 x 3\>\lRHS : float\<1 x 224 x 224 x 3\>\lusers : 1\lResult : float\<1 x 224 x 224 x 3\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=MistyRose2
+penwidth = 2];
+
+data[
+	label = "{{Placeholder\lname : \"data\"\llayout : *\loutput : float\<1 x 224 x 224 x 3\>\ltrainable : 0\lstatic : 0\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=MistyRose1
+penwidth = 2];
+
+broadcast__defaultpreprocess0_init_mean_tile2__2_constfold[
+	label = "{{Constant\lname : \"broadcast__defaultpreprocess0_init_mean_tile2__2_constfold\"\llayout : *\loutput : float\<1 x 224 x 224 x 3\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+broadcast__defaultpreprocess0_init_scale_tile2__2_constfold[
+	label = "{{Constant\lname : \"broadcast__defaultpreprocess0_init_scale_tile2__2_constfold\"\llayout : *\loutput : float\<1 x 224 x 224 x 3\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_conv0_weight__1[
+	label = "{{Constant\lname : \"resnetv10_conv0_weight__1\"\llayout : NHWC\loutput : float\<64 x 7 x 7 x 3\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__20[
+	label = "{{Constant\lname : \"conv_bias__20\"\llayout : *\loutput : float\<64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage1_conv1_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage1_conv1_fwd__2\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 56 x 56 x 64\>\lFilter : i8[S:0.0156 O:0][-2.000,1.984]\<64 x 3 x 3 x 64\>\lBias : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<64\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage1_conv0_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage1_conv0_fwd__2\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 56 x 56 x 64\>\lFilter : i8[S:0.0078 O:0][-1.000,0.992]\<64 x 3 x 3 x 64\>\lBias : i32[S:0.0002 O:0][-524288.000,524288.000]\<64\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : RELU\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 56 x 56 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage1_conv0_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage1_conv0_weight__1\"\llayout : NHWC\loutput : i8[S:0.0078 O:0][-1.000,0.992]\<64 x 3 x 3 x 64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__21[
+	label = "{{Constant\lname : \"conv_bias__21\"\llayout : *\loutput : i32[S:0.0002 O:0][-524288.000,524288.000]\<64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage1_conv1_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage1_conv1_weight__1\"\llayout : NHWC\loutput : i8[S:0.0156 O:0][-2.000,1.984]\<64 x 3 x 3 x 64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__22[
+	label = "{{Constant\lname : \"conv_bias__22\"\llayout : *\loutput : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage1_conv3_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage1_conv3_fwd__2\lInput : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 56 x 56 x 64\>\lFilter : i8[S:0.0156 O:0][-2.000,1.984]\<64 x 3 x 3 x 64\>\lBias : i32[S:0.0002 O:0][-524288.000,524288.000]\<64\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage1_conv2_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage1_conv2_fwd__2\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\lFilter : i8[S:0.0020 O:0][-0.250,0.248]\<64 x 3 x 3 x 64\>\lBias : i32[S:0.0001 O:0][-262144.000,262144.000]\<64\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : RELU\lusers : 1\lResult : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 56 x 56 x 64\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage1_conv2_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage1_conv2_weight__1\"\llayout : NHWC\loutput : i8[S:0.0020 O:0][-0.250,0.248]\<64 x 3 x 3 x 64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__23[
+	label = "{{Constant\lname : \"conv_bias__23\"\llayout : *\loutput : i32[S:0.0001 O:0][-262144.000,262144.000]\<64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage1_conv3_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage1_conv3_weight__1\"\llayout : NHWC\loutput : i8[S:0.0156 O:0][-2.000,1.984]\<64 x 3 x 3 x 64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias[
+	label = "{{Constant\lname : \"conv_bias\"\llayout : *\loutput : i32[S:0.0002 O:0][-524288.000,524288.000]\<64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage2_conv2_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage2_conv2_weight__1\"\llayout : NHWC\loutput : i8[S:0.0078 O:0][-1.000,0.992]\<128 x 1 x 1 x 64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__24[
+	label = "{{Constant\lname : \"conv_bias__24\"\llayout : *\loutput : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage2_conv1_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage2_conv1_fwd__2\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 28 x 28 x 128\>\lFilter : i8[S:0.0078 O:0][-1.000,0.992]\<128 x 3 x 3 x 128\>\lBias : i32[S:0.0002 O:0][-524288.000,524288.000]\<128\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage2_conv0_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage2_conv0_fwd__2\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 56 x 56 x 64\>\lFilter : i8[S:0.0020 O:0][-0.250,0.248]\<128 x 3 x 3 x 64\>\lBias : i32[S:0.0001 O:0][-262144.000,262144.000]\<128\>\lKernels : [3, 3]\lStrides : [2, 2]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : RELU\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 28 x 28 x 128\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage2_conv0_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage2_conv0_weight__1\"\llayout : NHWC\loutput : i8[S:0.0020 O:0][-0.250,0.248]\<128 x 3 x 3 x 64\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__25[
+	label = "{{Constant\lname : \"conv_bias__25\"\llayout : *\loutput : i32[S:0.0001 O:0][-262144.000,262144.000]\<128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage2_conv1_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage2_conv1_weight__1\"\llayout : NHWC\loutput : i8[S:0.0078 O:0][-1.000,0.992]\<128 x 3 x 3 x 128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__26[
+	label = "{{Constant\lname : \"conv_bias__26\"\llayout : *\loutput : i32[S:0.0002 O:0][-524288.000,524288.000]\<128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage2_conv4_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage2_conv4_fwd__2\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 28 x 28 x 128\>\lFilter : i8[S:0.0078 O:0][-1.000,0.992]\<128 x 3 x 3 x 128\>\lBias : i32[S:0.0002 O:0][-524288.000,524288.000]\<128\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 28 x 28 x 128\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage2_conv3_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage2_conv3_fwd__2\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\lFilter : i8[S:0.0039 O:0][-0.500,0.496]\<128 x 3 x 3 x 128\>\lBias : i32[S:0.0002 O:0][-524288.000,524288.000]\<128\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : RELU\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 28 x 28 x 128\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage2_conv3_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage2_conv3_weight__1\"\llayout : NHWC\loutput : i8[S:0.0039 O:0][-0.500,0.496]\<128 x 3 x 3 x 128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__27[
+	label = "{{Constant\lname : \"conv_bias__27\"\llayout : *\loutput : i32[S:0.0002 O:0][-524288.000,524288.000]\<128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage2_conv4_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage2_conv4_weight__1\"\llayout : NHWC\loutput : i8[S:0.0078 O:0][-1.000,0.992]\<128 x 3 x 3 x 128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__5[
+	label = "{{Constant\lname : \"conv_bias__5\"\llayout : *\loutput : i32[S:0.0002 O:0][-524288.000,524288.000]\<128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage3_conv2_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage3_conv2_weight__1\"\llayout : NHWC\loutput : i8[S:0.0039 O:0][-0.500,0.496]\<256 x 1 x 1 x 128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__28[
+	label = "{{Constant\lname : \"conv_bias__28\"\llayout : *\loutput : i32[S:0.0002 O:0][-524288.000,524288.000]\<256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage3_conv1_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage3_conv1_fwd__2\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\lFilter : i8[S:0.0078 O:0][-1.000,0.992]\<256 x 3 x 3 x 256\>\lBias : i32[S:0.0002 O:0][-524288.000,524288.000]\<256\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage3_conv0_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage3_conv0_fwd__2\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 28 x 28 x 128\>\lFilter : i8[S:0.0020 O:0][-0.250,0.248]\<256 x 3 x 3 x 128\>\lBias : i32[S:0.0001 O:0][-262144.000,262144.000]\<256\>\lKernels : [3, 3]\lStrides : [2, 2]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : RELU\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage3_conv0_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage3_conv0_weight__1\"\llayout : NHWC\loutput : i8[S:0.0020 O:0][-0.250,0.248]\<256 x 3 x 3 x 128\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__29[
+	label = "{{Constant\lname : \"conv_bias__29\"\llayout : *\loutput : i32[S:0.0001 O:0][-262144.000,262144.000]\<256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage3_conv1_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage3_conv1_weight__1\"\llayout : NHWC\loutput : i8[S:0.0078 O:0][-1.000,0.992]\<256 x 3 x 3 x 256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__30[
+	label = "{{Constant\lname : \"conv_bias__30\"\llayout : *\loutput : i32[S:0.0002 O:0][-524288.000,524288.000]\<256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage3_conv4_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage3_conv4_fwd__2\lInput : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 14 x 14 x 256\>\lFilter : i8[S:0.0078 O:0][-1.000,0.992]\<256 x 3 x 3 x 256\>\lBias : i32[S:0.0001 O:0][-262144.000,262144.000]\<256\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage3_conv3_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage3_conv3_fwd__2\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\lFilter : i8[S:0.0039 O:0][-0.500,0.496]\<256 x 3 x 3 x 256\>\lBias : i32[S:0.0001 O:0][-262144.000,262144.000]\<256\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : RELU\lusers : 1\lResult : i8[S:0.0156 O:0][-2.000,1.984]\<1 x 14 x 14 x 256\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage3_conv3_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage3_conv3_weight__1\"\llayout : NHWC\loutput : i8[S:0.0039 O:0][-0.500,0.496]\<256 x 3 x 3 x 256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__31[
+	label = "{{Constant\lname : \"conv_bias__31\"\llayout : *\loutput : i32[S:0.0001 O:0][-262144.000,262144.000]\<256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage3_conv4_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage3_conv4_weight__1\"\llayout : NHWC\loutput : i8[S:0.0078 O:0][-1.000,0.992]\<256 x 3 x 3 x 256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__10[
+	label = "{{Constant\lname : \"conv_bias__10\"\llayout : *\loutput : i32[S:0.0001 O:0][-262144.000,262144.000]\<256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage4_conv2_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage4_conv2_weight__1\"\llayout : NHWC\loutput : i8[S:0.0156 O:0][-2.000,1.984]\<512 x 1 x 1 x 256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__32[
+	label = "{{Constant\lname : \"conv_bias__32\"\llayout : *\loutput : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<512\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage4_conv1_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage4_conv1_fwd__2\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 7 x 7 x 512\>\lFilter : i8[S:0.0156 O:0][-2.000,1.984]\<512 x 3 x 3 x 512\>\lBias : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<512\>\lKernels : [3, 3]\lStrides : [1, 1]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : NONE\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 7 x 7 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage4_conv0_fwd__2[
+	label = "{{<Input>Input|<Filter>Filter|<Bias>Bias}|{Convolution\lname : resnetv10_stage4_conv0_fwd__2\lInput : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 14 x 14 x 256\>\lFilter : i8[S:0.0039 O:0][-0.500,0.496]\<512 x 3 x 3 x 256\>\lBias : i32[S:0.0001 O:0][-262144.000,262144.000]\<512\>\lKernels : [3, 3]\lStrides : [2, 2]\lPads : [1, 1, 1, 1]\lGroup : 1\lDilation : 1\lLayout : NHWC\lFusedActivation : RELU\lusers : 1\lResult : i8[S:0.0312 O:0][-4.000,3.969]\<1 x 7 x 7 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle1
+penwidth = 2];
+
+resnetv10_stage4_conv0_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage4_conv0_weight__1\"\llayout : NHWC\loutput : i8[S:0.0039 O:0][-0.500,0.496]\<512 x 3 x 3 x 256\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__33[
+	label = "{{Constant\lname : \"conv_bias__33\"\llayout : *\loutput : i32[S:0.0001 O:0][-262144.000,262144.000]\<512\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage4_conv1_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage4_conv1_weight__1\"\llayout : NHWC\loutput : i8[S:0.0156 O:0][-2.000,1.984]\<512 x 3 x 3 x 512\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__34[
+	label = "{{Constant\lname : \"conv_bias__34\"\llayout : *\loutput : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<512\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage4_conv3_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage4_conv3_weight__1\"\llayout : NHWC\loutput : i8[S:0.0039 O:0][-0.500,0.496]\<512 x 3 x 3 x 512\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__35[
+	label = "{{Constant\lname : \"conv_bias__35\"\llayout : *\loutput : i32[S:0.0002 O:0][-524288.000,524288.000]\<512\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage4_conv4_weight__1[
+	label = "{{Constant\lname : \"resnetv10_stage4_conv4_weight__1\"\llayout : NHWC\loutput : i8[S:0.0625 O:0][-8.000,7.938]\<512 x 3 x 3 x 512\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+conv_bias__15[
+	label = "{{Constant\lname : \"conv_bias__15\"\llayout : *\loutput : i32[S:0.0010 O:0][-2097152.000,2097152.000]\<512\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_stage4_activation1__1[
+	label = "{{<Input>Input}|{Relu\lname : resnetv10_stage4_activation1__1\lInput : i8[S:0.2500 O:0][-32.000,31.750]\<1 x 7 x 7 x 512\>\lusers : 1\lResult : i8[S:0.2500 O:0][-32.000,31.750]\<1 x 7 x 7 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=LavenderBlush1
+penwidth = 2];
+
+resnetv10_stage4__plus1__1[
+	label = "{{<LHS>LHS|<RHS>RHS}|{Add\lname : resnetv10_stage4__plus1__1\lLHS : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 7 x 7 x 512\>\lRHS : i8[S:0.1250 O:0][-16.000,15.875]\<1 x 7 x 7 x 512\>\lusers : 1\lResult : i8[S:0.2500 O:0][-32.000,31.750]\<1 x 7 x 7 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=GhostWhite
+penwidth = 2];
+
+resnetv10_pool1_fwd__1[
+	label = "{{<Input>Input}|{AvgPool\lname : resnetv10_pool1_fwd__1\lInput : i8[S:0.2500 O:0][-32.000,31.750]\<1 x 7 x 7 x 512\>\lKernels : [7, 7]\lStrides : [1, 1]\lPads : [0, 0, 0, 0]\lLayout : 0\lCountIncludePads : 0\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 1 x 1 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Yellow2
+penwidth = 2];
+
+resnetv10_dense0_fwd_save[
+	label = "{{<Input>Input|<Output>Output}|{Save\lname : resnetv10_dense0_fwd_save\lInput : float\<1 x 1000\>\lOutput : float\<1 x 1000\>\lusers : 0\l}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=PowderBlue
+penwidth = 2];
+
+resnetv10_dense0_fwd__2_dequantize[
+	label = "{{<Input>Input}|{Dequantize\lname : resnetv10_dense0_fwd__2_dequantize\lInput : i8[S:0.1250 O:0][-16.000,15.875]\<1 x 1000\>\lusers : 1\lResult : float\<1 x 1000\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=AliceBlue
+penwidth = 2];
+
+resnetv10_dense0_fwd__2[
+	label = "{{<Input>Input|<Weights>Weights|<Bias>Bias}|{FullyConnected\lname : resnetv10_dense0_fwd__2\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 512\>\lWeights : i8[S:0.0078 O:0][-1.000,0.992]\<512 x 1000\>\lBias : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<1000\>\lusers : 1\lResult : i8[S:0.1250 O:0][-16.000,15.875]\<1 x 1000\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Thistle3
+penwidth = 2];
+
+flatten_175__1[
+	label = "{{<Input>Input}|{Reshape\lname : flatten_175__1\lInput : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 1 x 1 x 512\>\lDims : [1, 512]\lLayout : *\lusers : 1\lResult : i8[S:0.0625 O:0][-8.000,7.938]\<1 x 512\>\l}|{<Result>Result}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Yellow2
+penwidth = 2];
+
+resnetv10_dense0_weight__1[
+	label = "{{Constant\lname : \"resnetv10_dense0_weight__1\"\llayout : *\loutput : i8[S:0.0078 O:0][-1.000,0.992]\<512 x 1000\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_dense0_bias[
+	label = "{{Constant\lname : \"resnetv10_dense0_bias\"\llayout : *\loutput : i32[S:0.0005 O:0][-1048576.000,1048576.000]\<1000\>\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=Snow3 color=DeepSkyBlue4
+penwidth = 2];
+
+resnetv10_dense0_fwd__1[
+	label = "{{Placeholder\lname : \"resnetv10_dense0_fwd__1\"\llayout : *\loutput : float\<1 x 1000\>\ltrainable : 0\lstatic : 0\lusers : 1\l}|{<Output>Output}}"
+	shape = "record"
+	style="filled,rounded"
+	fillcolor=MistyRose1
+penwidth = 2];
+
+resnetv10_dense0_fwd__1:Output -> resnetv10_dense0_fwd_save:Output [dir="both"];
+resnetv10_dense0_bias:Output -> resnetv10_dense0_fwd__2:Bias;
+resnetv10_dense0_weight__1:Output -> resnetv10_dense0_fwd__2:Weights;
+resnetv10_pool1_fwd__1:Result -> flatten_175__1:Input;
+resnetv10_dense0_fwd__2:Result -> resnetv10_dense0_fwd__2_dequantize:Input;
+resnetv10_dense0_fwd__2_dequantize:Result -> resnetv10_dense0_fwd_save:Input;
+resnetv10_stage4__plus1__1:Result -> resnetv10_stage4_activation1__1:Input;
+conv_bias__35:Output -> resnetv10_stage4_conv3_fwd__2:Bias;
+resnetv10_stage4_conv3_weight__1:Output -> resnetv10_stage4_conv3_fwd__2:Filter;
+resnetv10_stage4_activation1__1:Result -> resnetv10_pool1_fwd__1:Input;
+conv_bias__34:Output -> resnetv10_stage4_conv1_fwd__2:Bias;
+resnetv10_stage3_activation1__1:Result -> resnetv10_stage4_conv0_fwd__2:Input;
+resnetv10_stage4_conv0_fwd__2:Result -> resnetv10_stage4_conv1_fwd__2:Input;
+resnetv10_stage4_conv1_fwd__2:Result -> resnetv10_stage4__plus0__1:RHS;
+conv_bias__32:Output -> resnetv10_stage4_conv2_fwd__2:Bias;
+conv_bias__10:Output -> resnetv10_stage3_conv4_fwd__2:Bias;
+resnetv10_stage3_activation0__1:Result -> resnetv10_stage3_conv3_fwd__2:Input;
+resnetv10_stage3_conv1_weight__1:Output -> resnetv10_stage3_conv1_fwd__2:Filter;
+resnetv10_stage3_conv3_fwd__2:Result -> resnetv10_stage3_conv4_fwd__2:Input;
+conv_bias__29:Output -> resnetv10_stage3_conv0_fwd__2:Bias;
+resnetv10_stage2_activation1__1:Result -> resnetv10_stage3_conv0_fwd__2:Input;
+resnetv10_stage3_conv0_fwd__2:Result -> resnetv10_stage3_conv1_fwd__2:Input;
+conv_bias__28:Output -> resnetv10_stage3_conv2_fwd__2:Bias;
+resnetv10_stage4_activation0__1:Result -> resnetv10_stage4__plus1__1:LHS;
+resnetv10_conv0_fwd__2:Result -> resnetv10_pool0_fwd__1_quantize:Input;
+resnetv10_pool0_fwd__1_quantize:Result -> resnetv10_pool0_fwd__1:Input;
+conv_bias__25:Output -> resnetv10_stage2_conv0_fwd__2:Bias;
+resnetv10_pool0_fwd__1:Result -> resnetv10_stage1__plus0__1:LHS;
+data:Output -> _defaultpreprocess0_broadcast_minus0:LHS;
+resnetv10_stage2_conv1_weight__1:Output -> resnetv10_stage2_conv1_fwd__2:Filter;
+_defaultpreprocess0_broadcast_minus0:Result -> _defaultpreprocess0_broadcast_div0:LHS;
+resnetv10_stage3_conv2_fwd__2:Result -> resnetv10_stage3__plus0__1:LHS;
+resnetv10_stage1__plus0__1:Result -> resnetv10_stage1_activation0__1:Input;
+resnetv10_stage4_conv4_weight__1:Output -> resnetv10_stage4_conv4_fwd__2:Filter;
+resnetv10_stage2_conv2_fwd__2:Result -> resnetv10_stage2__plus0__1:LHS;
+resnetv10_pool0_fwd__1:Result -> resnetv10_stage1_conv0_fwd__2:Input;
+resnetv10_stage2__plus0__1:Result -> resnetv10_stage2_activation0__1:Input;
+resnetv10_stage4_conv2_fwd__2:Result -> resnetv10_stage4__plus0__1:LHS;
+resnetv10_stage1__plus1__1:Result -> resnetv10_stage1_activation1__1:Input;
+resnetv10_stage4_conv3_fwd__2:Result -> resnetv10_stage4_conv4_fwd__2:Input;
+resnetv10_stage1_conv2_fwd__2:Result -> resnetv10_stage1_conv3_fwd__2:Input;
+resnetv10_stage4__plus0__1:Result -> resnetv10_stage4_activation0__1:Input;
+resnetv10_stage4_conv1_weight__1:Output -> resnetv10_stage4_conv1_fwd__2:Filter;
+resnetv10_stage1_conv1_weight__1:Output -> resnetv10_stage1_conv1_fwd__2:Filter;
+resnetv10_stage2_conv0_weight__1:Output -> resnetv10_stage2_conv0_fwd__2:Filter;
+resnetv10_stage2__plus1__1:Result -> resnetv10_stage2_activation1__1:Input;
+resnetv10_stage1_activation1__1:Result -> resnetv10_stage2_conv0_fwd__2:Input;
+conv_bias__20:Output -> resnetv10_conv0_fwd__2:Bias;
+resnetv10_stage1_conv3_weight__1:Output -> resnetv10_stage1_conv3_fwd__2:Filter;
+resnetv10_stage3_activation1__1:Result -> resnetv10_stage4_conv2_fwd__2:Input;
+resnetv10_stage2_activation0__1:Result -> resnetv10_stage2_conv3_fwd__2:Input;
+resnetv10_stage4_activation0__1:Result -> resnetv10_stage4_conv3_fwd__2:Input;
+broadcast__defaultpreprocess0_init_scale_tile2__2_constfold:Output -> _defaultpreprocess0_broadcast_div0:RHS;
+resnetv10_stage4_conv0_weight__1:Output -> resnetv10_stage4_conv0_fwd__2:Filter;
+resnetv10_stage3_conv3_weight__1:Output -> resnetv10_stage3_conv3_fwd__2:Filter;
+resnetv10_stage3_activation0__1:Result -> resnetv10_stage3__plus1__1:LHS;
+resnetv10_stage1_conv1_fwd__2:Result -> resnetv10_stage1__plus0__1:RHS;
+resnetv10_stage2_activation1__1:Result -> resnetv10_stage3_conv2_fwd__2:Input;
+resnetv10_stage3__plus0__1:Result -> resnetv10_stage3_activation0__1:Input;
+resnetv10_stage3_conv4_fwd__2:Result -> resnetv10_stage3__plus1__1:RHS;
+resnetv10_conv0_weight__1:Output -> resnetv10_conv0_fwd__2:Filter;
+resnetv10_stage4_conv4_fwd__2:Result -> resnetv10_stage4__plus1__1:RHS;
+conv_bias__33:Output -> resnetv10_stage4_conv0_fwd__2:Bias;
+conv_bias__31:Output -> resnetv10_stage3_conv3_fwd__2:Bias;
+resnetv10_stage1_conv0_fwd__2:Result -> resnetv10_stage1_conv1_fwd__2:Input;
+resnetv10_stage1_activation1__1:Result -> resnetv10_stage2_conv2_fwd__2:Input;
+conv_bias:Output -> resnetv10_stage1_conv3_fwd__2:Bias;
+resnetv10_stage1_conv3_fwd__2:Result -> resnetv10_stage1__plus1__1:RHS;
+conv_bias__30:Output -> resnetv10_stage3_conv1_fwd__2:Bias;
+resnetv10_stage2_conv4_fwd__2:Result -> resnetv10_stage2__plus1__1:RHS;
+broadcast__defaultpreprocess0_init_mean_tile2__2_constfold:Output -> _defaultpreprocess0_broadcast_minus0:RHS;
+resnetv10_stage2_conv0_fwd__2:Result -> resnetv10_stage2_conv1_fwd__2:Input;
+resnetv10_stage2_activation0__1:Result -> resnetv10_stage2__plus1__1:LHS;
+resnetv10_stage1_conv0_weight__1:Output -> resnetv10_stage1_conv0_fwd__2:Filter;
+resnetv10_stage3__plus1__1:Result -> resnetv10_stage3_activation1__1:Input;
+conv_bias__21:Output -> resnetv10_stage1_conv0_fwd__2:Bias;
+resnetv10_stage1_activation0__1:Result -> resnetv10_stage1_conv2_fwd__2:Input;
+resnetv10_stage1_conv2_weight__1:Output -> resnetv10_stage1_conv2_fwd__2:Filter;
+conv_bias__15:Output -> resnetv10_stage4_conv4_fwd__2:Bias;
+conv_bias__22:Output -> resnetv10_stage1_conv1_fwd__2:Bias;
+conv_bias__23:Output -> resnetv10_stage1_conv2_fwd__2:Bias;
+resnetv10_stage4_conv2_weight__1:Output -> resnetv10_stage4_conv2_fwd__2:Filter;
+resnetv10_stage1_activation0__1:Result -> resnetv10_stage1__plus1__1:LHS;
+resnetv10_stage2_conv2_weight__1:Output -> resnetv10_stage2_conv2_fwd__2:Filter;
+conv_bias__24:Output -> resnetv10_stage2_conv2_fwd__2:Bias;
+resnetv10_stage2_conv1_fwd__2:Result -> resnetv10_stage2__plus0__1:RHS;
+resnetv10_stage3_conv4_weight__1:Output -> resnetv10_stage3_conv4_fwd__2:Filter;
+resnetv10_stage3_conv0_weight__1:Output -> resnetv10_stage3_conv0_fwd__2:Filter;
+conv_bias__27:Output -> resnetv10_stage2_conv3_fwd__2:Bias;
+conv_bias__26:Output -> resnetv10_stage2_conv1_fwd__2:Bias;
+resnetv10_stage2_conv3_fwd__2:Result -> resnetv10_stage2_conv4_fwd__2:Input;
+_defaultpreprocess0_broadcast_div0:Result -> resnetv10_conv0_fwd__2:Input;
+resnetv10_stage2_conv4_weight__1:Output -> resnetv10_stage2_conv4_fwd__2:Filter;
+flatten_175__1:Result -> resnetv10_dense0_fwd__2:Input;
+resnetv10_stage3_conv1_fwd__2:Result -> resnetv10_stage3__plus0__1:RHS;
+resnetv10_stage2_conv3_weight__1:Output -> resnetv10_stage2_conv3_fwd__2:Filter;
+conv_bias__5:Output -> resnetv10_stage2_conv4_fwd__2:Bias;
+resnetv10_stage3_conv2_weight__1:Output -> resnetv10_stage3_conv2_fwd__2:Filter;
+}
